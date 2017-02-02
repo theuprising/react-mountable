@@ -1,15 +1,13 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-import Component from '../../src'
+import mountable from '../../src'
 
-let Demo = React.createClass({
-  render() {
-    return <div>
-      <h1>react-mountable Demo</h1>
-      <Component/>
-    </div>
-  }
-})
+const mountItalic = el => {
+  el.innerHTML = '<em>Hello!</em>'
+}
 
-render(<Demo/>, document.querySelector('#demo'))
+const Italic = mountable(mountItalic)
+
+render(<Italic />, document.querySelector('#demo'))
+
