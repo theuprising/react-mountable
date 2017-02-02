@@ -1,6 +1,6 @@
 {
   "name": "react-mountable",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "react-mountable React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -29,11 +29,20 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2"
   },
-  "author": "",
-  "homepage": "",
-  "license": "MIT",
-  "repository": "",
+  "author": "Andrew J. Monks <a@monks.co>",
+  "homepage": "https://github.com/amonks/react-mountable#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amonks/react-mountable.git"
+  },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "bugs": {
+    "url": "https://github.com/amonks/react-mountable/issues"
+  }
 }
