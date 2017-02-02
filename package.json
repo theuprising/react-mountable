@@ -23,8 +23,10 @@
     "react": ""
   },
   "devDependencies": {
+    "enzyme": "^2.7.1",
     "nwb": "0.14.x",
     "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "author": "",

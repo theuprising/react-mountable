@@ -1,16 +1,21 @@
 # react-mountable
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+Let's say you have a non-react-aware thing (we'll call it `mountItalic`) that needs to mount itself into a regular dom node.
 
-Describe react-mountable here.
+Use this!
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+```js
+import React from 'react'
+import {render} from 'react-dom'
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+import mountable from '../../src'
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+const mountItalic = el => {
+  el.innerHTML = '<em>Hello!</em>'
+}
+
+const Italic = mountable(mountItalic)
+
+render(<Italic />, document.querySelector('#demo'))
+```
+
